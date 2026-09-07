@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Video Compressor — Compress Video in Your Browser</title>
+<meta name="description" content="Compress video free, right in your browser — files never leave your device. Fit Discord, WhatsApp, email or YouTube limits. No signup, no watermark, no upload.">
+<link rel="icon" href="/favicon-32.png" type="image/png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/space-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/_astro/Base.css">
+<link rel="stylesheet" href="/_astro/Compressor.css">
+<style>
+.faq{margin-top:var(--space-section)}.faq h2{margin-bottom:1.2rem}.faq-list{display:flex;flex-direction:column;gap:.6rem;max-width:var(--measure)}details{border:1px solid var(--border);border-radius:var(--r-sm);background:var(--card);overflow:hidden}summary{cursor:pointer;padding:.95rem 1.1rem;font-weight:600;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--accent);font-size:1.3rem;font-weight:400;transition:transform var(--t) var(--ease)}details[open] summary:after{transform:rotate(45deg)}.faq-a{padding:0 1.1rem 1.05rem;color:var(--muted-fg);line-height:1.65}
+.hero{padding-block:clamp(1.75rem,4vw,3rem)}.hero-grid{display:grid;grid-template-columns:1fr;gap:2rem;align-items:start}@media(min-width:940px){.hero-grid{grid-template-columns:.85fr 1.15fr}}.hero-copy{padding-top:.5rem}h1{margin:.9rem 0 0}.hl{color:var(--accent)}.lede{font-size:1.15rem;color:var(--muted-fg);margin-top:1rem;max-width:46ch}.hero-points{list-style:none;padding:0;margin:1.4rem 0 0;display:flex;flex-direction:column;gap:.55rem;font-weight:600}.band{background:color-mix(in srgb,var(--pop) 9%,var(--bg));border-block:var(--bw) solid var(--ink)}h2{margin-bottom:1.4rem}.steps{list-style:none;padding:0;margin:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.step{padding:1.4rem}.step-n{display:inline-grid;place-items:center;width:38px;height:38px;font-family:var(--font-display);font-weight:700;color:var(--accent-fg);background:var(--accent);border:var(--bw) solid var(--ink);border-radius:var(--r-sm);box-shadow:var(--sh-sm);margin-bottom:.7rem}.step h3{margin-bottom:.3rem}.step p{color:var(--muted-fg)}.trust-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.trust{padding:1.3rem}.trust h3{margin-bottom:.4rem}.trust p{color:var(--muted-fg)}.dest-grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.dest{display:flex;flex-direction:column;gap:.15rem}.dest-label{font-weight:700}.dest-sub{color:var(--muted-fg);font-size:.9rem}
+</style>
+</head>
+<body data-page-type="home" data-lang="en">
+<a href="#main" class="skip-link">Skip to content</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="/" class="wordmark" aria-label="Free Video Compressor — home">
+      <span class="mark" aria-hidden="true">FVC</span>
+      <span class="word"><b>Free</b> Video Compressor</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#dest">Discord</a></li>
+        <li><a href="#dest">8 MB</a></li>
+        <li><a href="#dest">Email</a></li>
+        <li><a href="#dest">YouTube</a></li>
+        <li><a href="#dest">MP4</a></li>
+        <li><a href="#dest">Large files</a></li>
+        <li><a href="#why">Privacy</a></li>
+        <li class="lang">
+          <details>
+            <summary aria-label="Language">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20"></path><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z"></path></svg>
+              <span>English</span>
+            </summary>
+            <ul class="lang-menu">
+              <li><a href="/" hreflang="en" lang="en" aria-current="true">English</a></li>
+              <li><a href="/he/" hreflang="he" lang="he">עברית</a></li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="label">Free · No upload · No watermark</span>
+      <h1>Compress video <span class="hl">in your browser</span></h1>
+      <p class="lede">Shrink any clip to fit Discord, WhatsApp, email or YouTube — without uploading it anywhere. Your video is compressed on your own device and never touches a server.</p>
+      <ul class="hero-points">
+        <li>🔒 Files never leave your browser</li>
+        <li>⚡ No signup · no watermark · no limits</li>
+        <li>🎯 One-click size presets</li>
+      </ul>
+    </div>
+    <section class="tool card" aria-label="Video compressor" data-default-preset="discord" data-i18n='{"loadingOnce":"Loading compressor (one-time)…","compressing":"Compressing on your device…","cancelling":"Cancelling…","notVideo":"That doesn’t look like a video. Use MP4, MOV or WebM.","failed":"Compression failed.","failedHint":"Very large files can exhaust browser memory — try a shorter clip, a smaller target, or close other tabs.","saved":"Saved {pct}% — {from} → {to}","alreadyCompact":"This video was already compact — {from} → {to}","clipOf":"Clip: {clip} of {dur}","fullClip":"Full clip","before":"Before","after":"After","trimmedTo":"Trimmed to","emailBusy":"Adding you…","emailOk":"You’re on the list — thanks! No spam, unsubscribe any time.","emailInvalid":"Please enter a valid email address.","emailFail":"That didn’t go through — your email wasn’t saved. Please try again."}'>
+      <div class="tool-head">
+        <span class="privacy-badge">🔒 Files never leave your browser</span>
+      </div>
+      <div id="dropzone" class="dropzone" tabindex="0" role="button" aria-label="Choose a video or drop it here">
+        <input id="fileInput" type="file" accept="video/mp4,video/quicktime,video/webm,video/*" hidden>
+        <div class="dz-inner">
+          <span class="dz-icon" aria-hidden="true">⬇</span>
+          <p class="dz-title">Drop a video here, or <span class="dz-link">browse</span></p>
+          <p class="dz-sub">MP4 · MOV · WebM — compressed right here, nothing uploaded</p>
+        </div>
+      </div>
+      <div id="controls" class="controls" hidden>
+        <div id="fileInfo" class="file-info"></div>
+        <fieldset class="trim" id="trimWrap" hidden>
+          <legend>Trim <span class="trim-opt">— optional</span></legend>
+          <p class="trim-hint">Keep only the part you need. A shorter clip means much better quality at the same size.</p>
+          <div class="trim-slider" id="trimSlider">
+            <div class="trim-track"><div id="trimRange" class="trim-sel"></div></div>
+            <input id="trimStart" class="trim-input trim-input-start" type="range" min="0" max="100" step="0.1" value="0" aria-label="Trim start time">
+            <input id="trimEnd" class="trim-input trim-input-end" type="range" min="0" max="100" step="0.1" value="100" aria-label="Trim end time">
+          </div>
+          <div class="trim-readout">
+            <label class="trim-field"><span>Start</span><input id="trimStartText" class="trim-time" type="text" inputmode="numeric" value="0:00" aria-label="Trim start time (m:ss)"></label>
+            <span class="trim-dur" id="trimDur">Full clip</span>
+            <label class="trim-field trim-field-end"><span>End</span><input id="trimEndText" class="trim-time" type="text" inputmode="numeric" value="0:00" aria-label="Trim end time (m:ss)"></label>
+          </div>
+          <button id="trimReset" class="trim-reset" type="button" hidden>↺ Use full video</button>
+        </fieldset>
+        <fieldset class="presets">
+          <legend>Compress to fit</legend>
+          <div class="preset-chips" id="presetChips">
+            <button type="button" class="chip" data-preset="discord" data-audience="gaming"><span class="chip-label">Discord</span><span class="chip-sub">20 MB free limit</span></button>
+            <button type="button" class="chip" data-preset="discord10" data-audience="gaming"><span class="chip-label">Discord 10 MB</span><span class="chip-sub">If yours still caps at 10 MB</span></button>
+            <button type="button" class="chip" data-preset="discord8" data-audience="gaming"><span class="chip-label">Discord 8 MB</span><span class="chip-sub">Fit the classic 8 MB</span></button>
+            <button type="button" class="chip" data-preset="discord50" data-audience="gaming"><span class="chip-label">Discord 50 MB</span><span class="chip-sub">Nitro Basic / boost lvl 2</span></button>
+            <button type="button" class="chip" data-preset="whatsapp" data-audience="general"><span class="chip-label">WhatsApp</span><span class="chip-sub">16 MB video limit</span></button>
+            <button type="button" class="chip" data-preset="email" data-audience="office"><span class="chip-label">Email</span><span class="chip-sub">25 MB attachment</span></button>
+            <button type="button" class="chip" data-preset="youtube" data-audience="creator"><span class="chip-label">YouTube</span><span class="chip-sub">Smaller, faster upload</span></button>
+            <button type="button" class="chip" data-preset="custom" data-audience="general"><span class="chip-label">Custom</span><span class="chip-sub">Pick a target size</span></button>
+          </div>
+          <div id="customWrap" class="custom-wrap" hidden>
+            <label for="customRange">Target size: <output id="customVal">25</output> MB</label>
+            <input id="customRange" type="range" min="2" max="200" step="1" value="25">
+          </div>
+        </fieldset>
+        <button id="compressBtn" class="btn btn-primary compress-btn" type="button">Compress video</button>
+        <p class="local-note">100% on-device · no signup · no watermark</p>
+      </div>
+      <div id="progress" class="progress" hidden role="status" aria-live="polite">
+        <p id="phase" class="phase">Loading compressor…</p>
+        <div class="bar"><div id="bar" class="bar-fill"></div></div>
+        <p class="progress-fine">Bigger files take longer — your CPU does the work, privately.</p>
+        <button id="cancelBtn" class="btn btn-secondary cancel-btn" type="button">Cancel</button>
+      </div>
+      <div id="result" class="result" hidden>
+        <div class="result-head">
+          <span class="result-badge">✓ Done</span>
+          <p id="resultSummary" class="result-summary"></p>
+        </div>
+        <div class="result-stats" id="resultStats"></div>
+        <div class="result-actions">
+          <a id="downloadBtn" class="btn btn-primary" download>Download compressed video</a>
+          <button id="againBtn" class="btn btn-secondary" type="button">Compress another</button>
+        </div>
+      </div>
+      <div id="error" class="error" hidden role="alert"></div>
+    </section>
+  </div>
+</section>
+<script type="module" src="/_astro/Compressor.js"></script>
+<section class="section band" aria-labelledby="how-h">
+  <div class="container">
+    <h2 id="how-h">Three steps, zero uploads</h2>
+    <ol class="steps">
+      <li class="card step"><span class="step-n">1</span><h3>Drop your video</h3><p>MP4, MOV or WebM. It loads straight into the page — nothing is uploaded.</p></li>
+      <li class="card step"><span class="step-n">2</span><h3>Pick a target</h3><p>One click for Discord, WhatsApp, email or YouTube — or set your own size.</p></li>
+      <li class="card step"><span class="step-n">3</span><h3>Download</h3><p>Your device does the compression. Download the smaller file when it’s done.</p></li>
+    </ol>
+  </div>
+</section>
+<section class="section" aria-labelledby="why-h" id="why">
+  <div class="container">
+    <h2 id="why-h">Why this one’s different</h2>
+    <div class="trust-grid">
+      <div class="card trust"><h3>Files never leave your browser</h3><p>Compression runs locally with WebAssembly. The engine loads once, then it even works offline — your video is never sent anywhere.</p></div>
+      <div class="card trust"><h3>No signup, no watermark</h3><p>No account, no email, no logo stamped on your video. Use it as much as you want.</p></div>
+      <div class="card trust"><h3>Made for real limits</h3><p>Presets target the exact caps that block you: Discord 20 MB, WhatsApp 16 MB, email 25 MB.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section band" aria-labelledby="dest-h" id="dest">
+  <div class="container">
+    <h2 id="dest-h">Compress for a specific limit</h2>
+    <div class="dest-grid">
+      <a class="card dest" href="/#dest"><span class="dest-label">Discord</span><span class="dest-sub">Fit 20 MB / 10 MB / 8 MB</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">8 MB video</span><span class="dest-sub">Under 8 MB</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">WhatsApp</span><span class="dest-sub">16 MB limit</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Email</span><span class="dest-sub">25 MB attach</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">YouTube</span><span class="dest-sub">Faster upload</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">MP4</span><span class="dest-sub">Most common</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">MOV</span><span class="dest-sub">iPhone / Mac</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">iPhone</span><span class="dest-sub">In Safari</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Large files</span><span class="dest-sub">Up to GBs</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">No watermark</span><span class="dest-sub">Clean output</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">10 MB</span><span class="dest-sub">Forums / older caps</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">25 MB</span><span class="dest-sub">Email / Slack</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Size reducer</span><span class="dest-sub">Pick a target</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">MP4 compressor</span><span class="dest-sub">Shrink any MP4</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Keep quality</span><span class="dest-sub">Least visible loss</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Telegram</span><span class="dest-sub">Faster upload</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Instagram</span><span class="dest-sub">Reels / feed</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">TikTok</span><span class="dest-sub">Crop to 9:16</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Cutter</span><span class="dest-sub">Trim a clip</span></a>
+      <a class="card dest" href="/#dest"><span class="dest-label">Cropper</span><span class="dest-sub">Change shape</span></a>
+    </div>
+  </div>
+</section>
+<div class="container measure">
+  <section class="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">Frequently asked questions</h2>
+    <div class="faq-list">
+      <details><summary>Is this video compressor really free?</summary><div class="faq-a"><p>Yes — completely free, with no signup, no email and no watermark. There’s no paid tier gating the compression.</p></div></details>
+      <details><summary>Are my videos uploaded to a server?</summary><div class="faq-a"><p>No. Compression runs entirely in your browser using WebAssembly. Your video file never leaves your device. The engine itself downloads once from a public CDN, then it even works offline.</p></div></details>
+      <details><summary>What video formats are supported?</summary><div class="faq-a"><p>MP4, MOV and WebM input. The output is an MP4 (H.264 + AAC) that plays virtually everywhere and uploads cleanly to Discord, WhatsApp, email and social platforms.</p></div></details>
+      <details><summary>How small can it make my video?</summary><div class="faq-a"><p>You set the target. Pick a preset (e.g. Discord 20 MB) or a custom size and the compressor aims for it by lowering the bitrate, and downscaling resolution when needed.</p></div></details>
+      <details><summary>Why is compression slow on big files?</summary><div class="faq-a"><p>Because your own device does the work — there’s no server farm. Speed depends on your CPU and the clip length. Very large files can hit browser memory limits; try a shorter clip or a larger target if it fails.</p></div></details>
+      <details><summary>Will the quality drop?</summary><div class="faq-a"><p>Some quality is traded for size — that’s how compression works. Presets balance size and quality; for the best quality at a given size, pick the largest target your destination allows.</p></div></details>
+    </div>
+  </section>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <nav class="footer-col" aria-label="Compress for">
+      <h2 class="footer-h">Compress for</h2>
+      <ul>
+        <li><a href="/#dest">For Discord</a></li>
+        <li><a href="/#dest">For WhatsApp</a></li>
+        <li><a href="/#dest">For Email</a></li>
+        <li><a href="/#dest">For YouTube</a></li>
+        <li><a href="/#dest">For Telegram</a></li>
+        <li><a href="/#dest">For Instagram</a></li>
+        <li><a href="/#dest">For TikTok</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="More tools">
+      <h2 class="footer-h">More</h2>
+      <ul>
+        <li><a href="/#dest">Compress MP4</a></li>
+        <li><a href="/#dest">MP4 compressor</a></li>
+        <li><a href="/#dest">Compress MOV</a></li>
+        <li><a href="/#dest">Video size reducer</a></li>
+        <li><a href="/#dest">Without losing quality</a></li>
+        <li><a href="/#dest">Video cutter</a></li>
+        <li><a href="/#dest">Video cropper</a></li>
+        <li><a href="/#dest">WebM to MP4</a></li>
+        <li><a href="/#dest">Compress to 10 MB</a></li>
+        <li><a href="/#dest">Compress to 25 MB</a></li>
+        <li><a href="/#dest">Large files</a></li>
+      </ul>
+    </nav>
+    <nav class="footer-col" aria-label="Site">
+      <h2 class="footer-h">Site</h2>
+      <ul>
+        <li><a href="/#why">How it stays private</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container footer-base">
+    <p class="disclaimer">Your videos are compressed locally in your browser and never uploaded to a server. Free to use — no signup, no watermark.</p>
+    <p class="copy">© 2026 Free Video Compressor</p>
+  </div>
+</footer>
+</body>
+</html>
