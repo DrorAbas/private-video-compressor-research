@@ -70,6 +70,7 @@
 /* ---------- BASE ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
 body {
   margin: 0;
   font-family: var(--font-body);
@@ -121,7 +122,30 @@ img, svg { display: inline-block; vertical-align: middle; }
 .wordmark .word { font-family: var(--font-display); font-size: 1.05rem; }
 .wordmark .word b { color: var(--accent); }
 
-.site-header nav ul { display: flex; align-items: center; gap: .35rem; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.site-header nav ul {
+  display: flex; align-items: center; gap: .35rem; list-style: none; margin: 0; padding: 0;
+}
+/* Mobile: single scrollable nav row, fixed height */
+@media (max-width: 860px) {
+  .header-inner { flex-wrap: nowrap; }
+  .wordmark { flex: 0 0 auto; }
+  .site-header nav { min-width: 0; flex: 1 1 auto; }
+  .site-header nav ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+  }
+  .site-header nav ul::-webkit-scrollbar { display: none; }
+  .site-header nav li { flex: 0 0 auto; scroll-snap-align: start; }
+  .site-header nav a, .lang summary {
+    white-space: nowrap;
+    padding: .3rem .6rem;
+    font-size: .85rem;
+  }
+  .lang-menu { max-width: 60vw; }
+}
 .site-header nav a {
   display: inline-block; padding: .38rem .7rem;
   color: var(--fg); font-weight: 600; font-size: .92rem;
