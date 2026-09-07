@@ -11,7 +11,7 @@ async def main():
         page.on('console', lambda m: errors.append(m.text) if m.type == 'error' else None)
 
         # ---- EN page ----
-        await page.goto('http://127.0.0.1:8877/', wait_until='networkidle')
+        await page.goto('http://127.0.0.1:8878/', wait_until='networkidle')
         await page.screenshot(path='/opt/data/projects/private-video-compressor-research/tests/en_top.png')
         title = await page.title()
         print('EN title:', title)
@@ -61,7 +61,7 @@ async def main():
             await page.screenshot(path='/opt/data/projects/private-video-compressor-research/tests/en_compressing.png')
 
         # ---- HE page ----
-        await page.goto('http://127.0.0.1:8877/he/', wait_until='networkidle')
+        await page.goto('http://127.0.0.1:8878/he/', wait_until='networkidle')
         await page.screenshot(path='/opt/data/projects/private-video-compressor-research/tests/he_top.png')
         title = await page.title()
         print('HE title:', title)

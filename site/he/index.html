@@ -2,7 +2,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>מדחס וידאו חינמי — דחיסת וידאו בדפדפן שלך</title>
+<title>קומפרסלי — דחיסת וידאו בדפדפן שלך</title>
 <meta name="description" content="דחוס וידאו חינם, ישירות בדפדפן — הקבצים לא עוזבים את המכשיר שלך. התאם למגבלות של Discord, WhatsApp, מייל או YouTube. בלי הרשמה, בלי סימן מים, בלי העלאה.">
 <link rel="icon" href="/favicon-32.png" type="image/png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -10,22 +10,18 @@
 <link rel="preload" href="/fonts/space-grotesk-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/_astro/Base.css">
-<link rel="stylesheet" href="/_astro/Compressor.css">
 <style>
 .faq{margin-top:var(--space-section)}.faq h2{margin-bottom:1.2rem}.faq-list{display:flex;flex-direction:column;gap:.6rem;max-width:var(--measure)}details{border:1px solid var(--border);border-radius:var(--r-sm);background:var(--card);overflow:hidden}summary{cursor:pointer;padding:.95rem 1.1rem;font-weight:600;font-size:1rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem}summary::-webkit-details-marker{display:none}summary:after{content:"+";color:var(--accent);font-size:1.3rem;font-weight:400;transition:transform var(--t) var(--ease)}details[open] summary:after{transform:rotate(45deg)}.faq-a{padding:0 1.1rem 1.05rem;color:var(--muted-fg);line-height:1.65}
 .hero{padding-block:clamp(1.75rem,4vw,3rem)}.hero-grid{display:grid;grid-template-columns:1fr;gap:2rem;align-items:start}@media(min-width:940px){.hero-grid{grid-template-columns:.85fr 1.15fr}}.hero-copy{padding-top:.5rem}h1{margin:.9rem 0 0}.hl{color:var(--accent)}.lede{font-size:1.15rem;color:var(--muted-fg);margin-top:1rem;max-width:46ch}.hero-points{list-style:none;padding:0;margin:1.4rem 0 0;display:flex;flex-direction:column;gap:.55rem;font-weight:600}.band{background:color-mix(in srgb,var(--pop) 9%,var(--bg));border-block:var(--bw) solid var(--ink)}h2{margin-bottom:1.4rem}.steps{list-style:none;padding:0;margin:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}.step{padding:1.4rem}.step-n{display:inline-grid;place-items:center;width:38px;height:38px;font-family:var(--font-display);font-weight:700;color:var(--accent-fg);background:var(--accent);border:var(--bw) solid var(--ink);border-radius:var(--r-sm);box-shadow:var(--sh-sm);margin-bottom:.7rem}.step h3{margin-bottom:.3rem}.step p{color:var(--muted-fg)}.trust-grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.trust{padding:1.3rem}.trust h3{margin-bottom:.4rem}.trust p{color:var(--muted-fg)}.dest-grid{display:grid;gap:.8rem;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.dest{display:flex;flex-direction:column;gap:.15rem}.dest-label{font-weight:700}.dest-sub{color:var(--muted-fg);font-size:.9rem}
-/* RTL adjustments */
-[dir="rtl"] .header-inner{flex-direction:row-reverse}
-[dir="rtl"] .trim-input-start,[dir="rtl"] .trim-input-end{transform:scaleX(-1)}
 </style>
 </head>
 <body data-page-type="home" data-lang="he">
 <a href="#main" class="skip-link">דילוג לתוכן</a>
 <header class="site-header">
   <div class="container header-inner">
-    <a href="/" class="wordmark" aria-label="מדחס וידאו חינמי — בית">
-      <span class="mark" aria-hidden="true">FVC</span>
-      <span class="word"><b>מדחס</b> וידאו חינמי</span>
+    <a href="/" class="wordmark" aria-label="קומפרסלי — בית">
+      <span class="mark" aria-hidden="true">C</span>
+      <span class="word"><b>קומפרס</b>לי</span>
     </a>
     <nav aria-label="ראשי">
       <ul>
@@ -36,6 +32,12 @@
         <li><a href="#dest">MP4</a></li>
         <li><a href="#dest">קבצים גדולים</a></li>
         <li><a href="#why">פרטיות</a></li>
+        <li>
+          <button class="theme-toggle" type="button" aria-label="החלף למצב כהה" title="מצב כהה">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+          </button>
+        </li>
         <li class="lang">
           <details>
             <summary aria-label="שפה">
@@ -135,6 +137,7 @@
     </section>
   </div>
 </section>
+<script src="/_astro/theme.js"></script>
 <script type="module" src="/_astro/Compressor.js"></script>
 <section class="section band" aria-labelledby="how-h">
   <div class="container">
@@ -236,7 +239,7 @@
   </div>
   <div class="container footer-base">
     <p class="disclaimer">הסרטונים שלך מדחסים מקומית בדפדפן ולא מועלים לשום שרת. חינם לשימוש — בלי הרשמה, בלי סימן מים.</p>
-    <p class="copy">© 2026 מדחס וידאו חינמי</p>
+    <p class="copy">© 2026 קומפרסלי</p>
   </div>
 </footer>
 </body>

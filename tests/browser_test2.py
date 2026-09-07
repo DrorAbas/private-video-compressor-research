@@ -12,7 +12,7 @@ async def main():
         errors = []
         page.on('pageerror', lambda e: errors.append(str(e)))
 
-        await page.goto('http://127.0.0.1:8877/', wait_until='networkidle')
+        await page.goto('http://127.0.0.1:8878/', wait_until='networkidle')
         await page.set_input_files('#fileInput', '/opt/data/projects/private-video-compressor-research/tests/out_20mb_sim.mp4')
         await page.wait_for_timeout(1500)
         # custom target: 2MB
